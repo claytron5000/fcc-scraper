@@ -1,18 +1,19 @@
 const {
 	FoxAffiliatesStructuredScraper,
-} = require("./FoxAffiliatesStructuredScraper");
+} = require("./src/FoxAffiliateScraper/FoxAffiliatesStructuredScraper");
 
 const {
 	WebsiteContactDetailsScraper,
-} = require("./WebsiteContactDetailScraper");
+} = require("./src/WebsiteContactDetailScraper/WebsiteContactDetailScraper");
 
 const {
 	WikipediaOfficialWebsiteFinder,
-} = require("./WikipediaOfficialWebsiteFinder");
+} = require("./src/WikipediaOfficialWebsiteFinder/WikipediaOfficialWebsiteFinder");
 
-const { FCCContactScraper } = require("./FCCScraper");
+const { FCCContactScraper } = require("./src/FCCScraper/FCCScraper");
 
 async function main() {
+	// @todo make these paths relative
 	const step1 = "wikipediaData.json";
 	const step2 = "officialSiteData.json";
 	const step3 = "contactInfoFromOfficialSite.json";
