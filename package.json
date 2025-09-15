@@ -1,7 +1,19 @@
 {
-  "dependencies": {
-    "axios": "^1.12.2",
-    "cheerio": "^1.1.0",
-    "puppeteer": "^24.20.0"
-  }
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"build:forDeploy": "vite build && cp -R dist docs"
+	},
+	"dependencies": {
+		"axios": "^1.12.2",
+		"cheerio": "^1.1.0",
+		"lucide-react": "^0.544.0",
+		"puppeteer": "^24.20.0",
+		"react-dom": "^19.1.1"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react": "^4.7.0",
+		"vite": "^6.3.6"
+	}
 }

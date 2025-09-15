@@ -1,16 +1,16 @@
 const {
 	FoxAffiliatesStructuredScraper,
-} = require("./src/FoxAffiliateScraper/FoxAffiliatesStructuredScraper");
+} = require("./scraperSource/FoxAffiliateScraper/FoxAffiliatesStructuredScraper");
 
 const {
 	WebsiteContactDetailsScraper,
-} = require("./src/WebsiteContactDetailScraper/WebsiteContactDetailScraper");
+} = require("./scraperSource/WebsiteContactDetailScraper/WebsiteContactDetailScraper");
 
 const {
 	WikipediaOfficialWebsiteFinder,
-} = require("./src/WikipediaOfficialWebsiteFinder/WikipediaOfficialWebsiteFinder");
+} = require("./scraperSource/WikipediaOfficialWebsiteFinder/WikipediaOfficialWebsiteFinder");
 
-const { FCCContactScraper } = require("./src/FCCScraper/FCCScraper");
+const { FCCContactScraper } = require("./scraperSource/FCCScraper/FCCScraper");
 
 async function main() {
 	// @todo make these paths relative
